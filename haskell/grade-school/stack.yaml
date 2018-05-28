@@ -1,0 +1,4 @@
+resolver: lts-11.1
+
+extra-deps:
+  - containers-0.5.11.0
