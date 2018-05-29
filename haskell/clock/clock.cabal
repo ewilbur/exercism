@@ -1,0 +1,34 @@
+-- This file has been generated from package.yaml by hpack version 0.28.2.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 4a296224387ad904c7d5eacfb0e7ea6ebf22b8104d4ec5b08d6c6788eb00d501
+
+name:           clock
+version:        2.2.1.4
+build-type:     Simple
+cabal-version:  >= 1.10
+
+library
+  exposed-modules:
+      Clock
+  other-modules:
+      Paths_clock
+  hs-source-dirs:
+      src
+  build-depends:
+      base
+  default-language: Haskell2010
+
+test-suite test
+  type: exitcode-stdio-1.0
+  main-is: Tests.hs
+  other-modules:
+      Paths_clock
+  hs-source-dirs:
+      test
+  build-depends:
+      base
+    , clock
+    , hspec
+  default-language: Haskell2010
